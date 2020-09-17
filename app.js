@@ -4,12 +4,15 @@
 //need to add vue
 
 const express = require('express');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081; //8080
 const mongoose = require('mongoose');
 const app = express();
 const body_parser = require('body-parser'); 
+const cors = require('cors') //client communicate with server in to diff ports
 const parameter_controller = require('./parameter_controller'); 
 
+
+app.use(cors())//client communicate with server in to diff ports
 app.use(body_parser.json()); //req.body.name
 app.use(body_parser.urlencoded({
     extended: true
@@ -44,6 +47,9 @@ app.put("/api/parameter/:id", parameter_controller.api_put_vessel_parameter_set_
 // DELETE
 
 app.delete("/api/parameter/:id", parameter_controller.api_delete_vessel_parameter_set_id); 
+
+//sample from internet
+app.get('/posts', parameter_controller.api_get_posts);
 
 //DATA BASE connection
 

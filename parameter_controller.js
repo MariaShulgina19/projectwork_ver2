@@ -68,6 +68,19 @@ const api_get_vessel_parameter_set_id = (req, res, next) => {
             });
 };           
 
+// READ SAMPLE FROM INTERNET
+const api_get_posts = (req, res, next) => {
+    
+    
+    console.log('testing sample get posts');
+    res.send(
+        [{
+          title: "Hello World!",
+          description: "Hi there! How are you?"
+        }]
+      )
+    
+}; 
 // UPDATE 
 
 //PUT /api/parameter/5eb655f8cc119b3488a007b4
@@ -113,3 +126,5 @@ module.exports.api_get_vessel_parameter_set_id =api_get_vessel_parameter_set_id 
 module.exports.api_put_vessel_parameter_set_id=api_put_vessel_parameter_set_id;
 
 module.exports.api_delete_vessel_parameter_set_id=api_delete_vessel_parameter_set_id;
+
+module.exports.api_get_posts=api_get_posts;//need to delete
