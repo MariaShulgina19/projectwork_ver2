@@ -72,7 +72,8 @@ div.allships {
 
 .vessels{
     border-collapse: collapse;
-    width: 100%;
+    width: 98%;
+    margin: 20px;
     
     /* padding-left: 10px; */
 
@@ -94,5 +95,47 @@ div.allships {
   text-align: left;
   background-color: rgb(63, 142, 173);
   color: white;
+   /* width: 30%; */
+}
+
+.input1{
+
+    border: none;
+    background-color: transparent;
+}
+
+.input2{
+
+    background-color: transparent;
+}
+
+.button1{
+
+    background-color: transparent;
+    margin: 2px;
+    border-radius: 12px;
+}
+
+.button1:hover{
+
+   
+   background-color: rgb(63, 142, 173);
+   color: white;
+
+}
+.button2{
+
+    background-color: transparent;
+    margin: 4px;
+    background-color: rgb(63, 142, 173);
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+}
+.button2:hover{
+
+   
+  border: 2px solid white;
+
 }
 </style>
