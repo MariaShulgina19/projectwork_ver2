@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="HARBOURS TODAY.js App"/>
+    <HelloWorld msg="HARBOURS TODAY App"/>
     <AllShips msg6="MY FLEET" />
   </div>
 </template>
