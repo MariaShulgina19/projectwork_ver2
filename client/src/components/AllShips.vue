@@ -1,19 +1,13 @@
 <template>
 <!-- MY FLEET  -->
   <div class="allships">
-    
-    
-
+  
     <div class="label">
-      
-       
-      <br>
-       
-
+          <br>
+     
       <button class="Buttion1" v-on:click ="Showcontent">{{ msg6 }}</button> 
     </div>
-    
-
+  
     <div class="content" v-show="isOpen" style="max-height: 500px; overflow-y:auto;">
           
           <br>
@@ -90,17 +84,9 @@
             </div>
         </template>
        </vl-overlay> 
-
-
       </vl-layer-vector>
-
-
     </vl-map>
-
-  </div>
-   
-
-    
+  </div> 
   </div>
 
 </template>
@@ -126,9 +112,15 @@ export default {
   
     isOpen: false,
     
-    newadress: `http://localhost:8081/api/parameters`, 
-    newadress2: `http://localhost:8081/api/parameter`, 
-    newadress3: `http://localhost:8081/api/parameter/`, 
+    //newadress: `http://localhost:8081/api/parameters`, 
+    //newadress2: `http://localhost:8081/api/parameter`, 
+    //newadress3: `http://localhost:8081/api/parameter/`, 
+
+
+    newadress: `https://port2020.heroku.com/api/parameters`,  //7.10
+    newadress2: `https://port2020.heroku.com/api/parameter`,  //7.10
+    newadress3: `https://port2020.heroku.com/api/parameter/`,  // 7.10
+
 
     adress_vessel_mmsi: `https://meri.digitraffic.fi/api/v1/locations/latest/`, //+ 356364000, 
     vesselCoordinate: [],

@@ -1,4 +1,6 @@
-const parameter_model = require('./parameter_model');
+
+const path =require('path'); //7.10
+const parameter_model = require(path.join (__dirname,'./parameter_model')); //7.10 const parameter_model = require('./parameter_model');
 
 
 // LEt for data
