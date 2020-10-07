@@ -117,9 +117,9 @@ export default {
     //newadress3: `http://localhost:8081/api/parameter/`, 
 
 
-    newadress: `https://port2020.heroku.com/api/parameters`,  //7.10
-    newadress2: `https://port2020.heroku.com/api/parameter`,  //7.10
-    newadress3: `https://port2020.heroku.com/api/parameter/`,  // 7.10
+    newadress: `https://port2020.herokuapp.com/api/parameters`,  //7.10
+    newadress2: `https://port2020.herokuapp.com/api/parameter`,  //7.10
+    newadress3: `https://port2020.herokuapp.com/api/parameter/`,  // 7.10
 
 
     adress_vessel_mmsi: `https://meri.digitraffic.fi/api/v1/locations/latest/`, //+ 356364000, 
