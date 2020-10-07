@@ -14,7 +14,7 @@ const parameter_controller = require('./parameter_controller');
 const path = require('path'); //7.10 allow to hanle path
 const serveStatic= require('serve-static'); //7.10 allow to serve static 
 
-app.use(serveStatic(__dirname + '/client/dist')) //7.10
+app.use(serveStatic(__dirname + '/dist')) //7.10
 
 app.use(cors())//client communicate with server in to diff ports
 app.use(body_parser.json()); //req.body.name
